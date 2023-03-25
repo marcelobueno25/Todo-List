@@ -1,0 +1,70 @@
+.form {
+  display: grid;
+  grid-template-columns: 10fr 100px;
+  column-gap: 10px;
+  transform: translateY(-30px);
+}
+
+.form input {
+  background: var(--gray-500);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 20px 30px;
+  color: var(--gray-100);
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-dark);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 20px 30px;
+  color: var(--gray-100);
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.8;
+  cursor: unset;
+}
+
+.form button:hover:not([disabled]) {
+  background: var(--blue);
+}
+
+.form button img {
+  margin-left: 5px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  transition: all 1s;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 20px;
+}
+
+.status .criadas {
+  transition: all 1s;
+  color: var(--blue);
+}
+
+.status .concluidas {
+  transition: all 1s;
+  color: var(--purple);
+}
+
+.status .criadas span,
+.status .concluidas span {
+  background: var(--gray-500);
+  padding: 5px 10px;
+  border-radius: 10rem;
+  color: var(--gray-100);
+}
